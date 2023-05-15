@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba de navegação -->
+    <title>G&TO - Uma nova Casa de Moda ESG com roupas no estilo Natural Esportivo.</title>
+    <!-- Colocando imagem na aba de navegador -->
+    <link rel="icon" href="./img/&.png">
+    <!-- Colocando descrição no site -->
+    <meta name="description"
+        content="Uma Casa de Moda comprometida com o movimento ESG, focada em roupas no Estilo Natural Esportivo para quem busca por roupas confortáveis e despojadas.">
+    <!-- Link com o CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Importando ícones do Font Awesome -->
+    <script src="https://kit.fontawesome.com/4915d31cb5.js" crossorigin="anonymous"></script>
+    <script>
+        function Mensagem() {
+            alert("Você será redirecionado para o seu servidor de email, caso não esteja logado ho seu email, efetue o login e tente novamente.")
+        }
+
+        function click_menu() {
+            if (item.style.display == 'block') {
+                item.style.display = 'none'
+            } else {
+                item.style.display = 'block'
+            }
+        }
+
+        function tamanho_site() {
+            if (window.innerWidth > 768) {
+                item.style.display = 'flex'
+            } else {
+                item.style.display = 'none'
+            }
+        }
+
+    </script>
+</head>
+
+<body onresize="tamanho_site()">
+    <header>
+        <nav class="alinhamento">
+            <a class="link_Underline_Logo" href="#">
+                <img class="logo" src="./img/G&TO-LOGO-ISIS.png" alt="O logo tipo da Jeito é simples, com texto escuro e uma folha atrás do E comercial.">
+            </a>
+            <ul class="menu" id="item">
+                <li><a href="#">Home</a></li>
+                <li><a href="#quem_somos">Quem somos?</a></li>
+                <li><a href="#conheca_esg">Conheça a ESG</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+
+            <!-- Menu de hamburguer -->
+            <i id="burguer" class="fa-solid fa-bars" onclick="click_menu()"></i>
+
+        </nav>
+    </header>
+    <main>
+
+        <h1>Página início da Jeito</h1>
+
+        <!-- Quem Somos? -->
+        <section class="quem_somos alinhamento" id="quem_somos">
+            <img class="primeira_foto" src="./img/feliz-grupo-de-amigos-com-as-maos-juntas-no-meio.jpg" alt="A imagem mostra um grupo de amigos sorrindo e olhando para baixo enquanto fazem sinais com as mãos.">
+            <div class="sobre">
+                <p class="sobre_titulo">Olá, Somos a G&TO!</p>
+                <p class="sobre_texto">A G&TO é uma nova casa de moda comprometida com o movimento ESG (Environmental, social, and corporate governance), focada em roupas de estilo esportivo despojado, e queremos garantir que voce encontre a roupa ideal, porque o melhor Jeito é o seu.</p>
+                <button class="btn_esg">
+                    <a href="#conheca_esg">Conheça a ESG</a>
+                </button>
+            </div>
+        </section>
+
+        <section class="data">
+            <p>Lançamento da <span>g&to</span></p>
+            <time datetime="2023-06-06">06/06/2023</time>
+        </section>
+
+        <!-- Imagem -->
+        <section class="imagens">
+            <div class="imgs alinhamento">
+
+                <img src="./img/retrato-de-menina-asiatica-sorridente-com-fones-de-ouvido-posando-no-centro-da-cidade-ouvindo-musica.jpg" alt="A imagem mostra uma mulher arrumando o cabelo enquanto sorri, usando fones no pescoço e uma camisa de botões bege e uma branca por baixo.">
+                <img src="./img/pexels-josh-hild-16465983.jpg" alt="A imagem mostra uma mulher no meio de um campo de girassóis usando uma blusa branca com gola role e um macacão, cheirando um girassol que segura na mão.">
+                <img src="./img/pexels-godisable-jacob-923229.jpg" alt="A imagem mostra uma mulher sentada no capô de um carro, ela usa roupas floridas e um óculos escuros.">
+
+            </div>
+        </section>
+
+        <!-- ESG -->
+        <section class="esg alinhamento" id="conheca_esg">
+            <div class="sobre_esg">
+                <p class="sobre_esg_titulo">O que é ESG?</p>
+                <p class="sobre_esg_texto">ESG é um conjunto de ideias e práticas que avaliam como as
+                    empresas cuidam do meio ambiente, das pessoas que trabalham
+                    com elas e de como são administradas. Por exemplo, uma empresa que usa
+                    materias recicláveis e se preocupa em ter um ambiente de trabalho
+                    saudável para os funcionários tem uma boa nota em ESG. Isso é
+                    importante porque muitas pessoas estão preocupadas em apoiar
+                    empresas que cuidam do mundo e das pessoas, não só em ganhar dinheiro.</p>
+            </div>
+            <img class="alinhamento" src="./img/pexels-tnarg-2932731.jpg" alt="A imagem mostra um homem apoiado em uma parede cinza usando uma blusa de moletom preta e uma calça jeans, com uma estampa de coração partido, óculos escuros, fones e um relógio, posando com a mão no queixo.">
+        </section>
+
+        <!-- Formulário -->
+        <section class="formulario">
+            <p class="formulario_titulo">Ficou com alguma dúvida?</p>
+
+            <!-- C(criar) R(listar) U(atualizar) D(deletar) -->
+            <form method="post" action="mailto:geto@gmail.com" enctype="text/plain">
+                <!-- Nome -->
+                <div>
+                    <label class="formulario_texto" for="name">Nome:</label>
+                    <input class="borda" type="text" id="name" name="name">
+
+                </div>
+
+                <!-- E-mail -->
+                <div>
+                    <label class="formulario_texto" for="email">E-mail:</label>
+                    <input class="borda" type="email" id="email" name="email">
+                </div>
+
+                <!-- Mensagem -->
+                <div>
+                    <label class="formulario_texto" for="message">Mensagem:</label>
+                    <textarea class="borda" name="message" id="message" cols="40" rows="6"></textarea>
+                </div>
+
+                <button class="btn_forms" type="submit" onclick="mensagem()">Enviar</button>
+            </form>
+
+        </section>
+
+        <!-- Contato -->
+        <section class="contato alinhamento">
+            <p class="contato_titulo">Contato</p>
+            <div class="conteudo_contato">
+                <div class="borda_mapa">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.698900351643!2d-46.57330458919063!3d-23.615129178674348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cec439b9ce3%3A0x92940269447ce633!2sR.%20Niter%C3%B3i%2C%20180%20-%20Centro%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009510-200!5e0!3m2!1spt-BR!2sbr!4v1683145092152!5m2!1spt-BR!2sbr"
+                        height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div>
+                    <div class="info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(99) 99999-9999</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>contato@geto.com</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Rua Niterói, 180 - SCS</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>@geto</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <p>@geto</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>@geto</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <!-- &copy -->
+        <p class="rodape_texto">Todos os direitos reservados &#169;G&TO</p>
+    </footer>
+</body>
+
+</html>
